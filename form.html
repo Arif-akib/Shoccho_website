@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Demo</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" type="image/x-icon" href="import/shoccho icon.png"/>
+</head>
+<body>
+    <div class="form">
+        <div class="overlay">
+            <a href="index.html"><img src="import/shoccho logo.png" alt=""></a>
+            <div class="form-body" id="ex1">
+                <div class="form-head">
+                    <h1>Fill the form to set a meeting with us</h1>
+                </div>
+                <form action="" method="post" id="formSubmit" enctype="text/plain">
+                    <div class="form-container">
+                        <div class="form-sub-con">
+                            <p>Name</p>
+                            <input type="text" value="" placeholder="Enter name" required id="name" name="name">
+                        </div>
+                
+                        <div class="form-sub-con">
+                            <p>Phone Number</p>
+                            <input type="text" value="" placeholder="Enter phoner number" required id="pNnum" name="number">
+                            <span id="message"></span>
+                        </div>
+        
+                        <div class="form-sub-con">
+                            <p>E-mail</p>
+                            <input type="email" value="" placeholder="Enter email" required id="cMail" name="mail">
+                        </div>
+        
+                        <div class="form-sub-con">
+                            <p>Company Name</p>
+                            <input type="text" value="" placeholder="Enter company name" required id="cName" name="cName">
+                        </div>
+        
+                        <div class="form-sub-con">
+                            <p>Number of employee </p>
+                            <div class="radio">
+                                <div class="radio-option">
+                                    <input type="radio" value="0-25" placeholder="" required id="eOption1" name="amount">
+                                    <label for="eOption1">0-25</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" value="26-50" placeholder="" required id="eOption2" name="amount">
+                                    <label for="eOption2">26-50</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" value="51-100" placeholder="" required id="eOption3" name="amount">
+                                    <label for="eOption3">51-99</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" value="101+" placeholder="" required id="eOption4" name="amount">
+                                    <label for="eOption5">100+</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" onclick="formSubmit()" value="submit form" id="formBtn">Book a Demo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

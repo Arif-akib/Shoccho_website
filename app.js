@@ -1,5 +1,5 @@
 // navbar part
-let dropDown=document.getElementById('dp');
+let dpList=document.getElementById('dp');
 let ham=document.getElementById('ham');
 ham.onclick=function(){
     console.log('x');
@@ -20,13 +20,53 @@ ham.onclick=function(){
       });
 // navbar part
 
+// accordion start
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("accor-active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+};
+
+// accordion end
+
+$(document).ready(function() {
+  $("#formSubmit").validate({
+      rules: {
+      pNum: {
+      number: true,
+      maxlength: 11,
+      }
+    }
+  });
+});
 
 
+window.addEventListener('scroll',reveal);
+function reveal(){
+  let reveals =document.querySelectorAll('.reveal');
+  for (var r = 0; r<reveals.length;r++){
 
+    var windowheight=window.innerHeight;
+    var revealtop=reveals[r].getBoundingClientRect().top;
+    var revealpoint =0;
 
-
-
-
+    if(revealtop < windowheight - revealpoint){
+      reveals[r].classList.add('r-active');
+    }
+    else{
+      reveals[r].classList.remove('r-active');
+    }
+  };
+}
 
 
 // pricing portion start

@@ -1,0 +1,28 @@
+.privecy{
+    width: 90%;
+    margin: 90px auto;
+    line-height: 1.5;
+}
+.privecy h1{
+    font-size: 30px;
+    color: blueviolet;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privecy h2{
+    font-size: 24px;
+    color: blueviolet;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privecy h3{
+    font-size: 18px;
+    color: blueviolet;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privecy p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
